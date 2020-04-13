@@ -1,0 +1,340 @@
+body {
+	background-color: #000ff0;
+	overflow: hidden;
+}
+
+.bodyodyody {
+	width: 100vw;
+	height: 100vh;
+	display: block;
+	transition: all 0.25s;
+}
+
+.bodyodyody.move {
+	transform: translateX(20%);
+	transition: all 0.25s;
+}
+
+div.frontscreen {
+	background-image: linear-gradient(to left, #ffbd6a, #94b6ff);
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: block;
+}
+
+div.sidescreen {
+	height: 100vh;
+	width: 55vw;
+	background-color: #1a5c00;
+	position: absolute;
+	bottom: 0;
+	left: -50vw;
+	z-index: 4;
+	display: block;
+	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+div.sometext {
+	position: absolute;
+	z-index: +4;
+	font-family: "poppins", sans-serif;
+	color: white;
+	right: 3%;
+	font-size: 2.3vw;
+}
+
+.sometext:hover {
+	color: grey;
+}
+
+a, a:visited, a:active {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: grey !important;
+}
+
+img.doodle {
+	width: 35%;
+	height: auto;
+	position: absolute;
+	right: 1%;
+	top: 5%;
+	filter: brightness(0%);
+}
+
+.mediaplayer {
+	position: relative;
+	width: 360px;
+	margin: 0 auto;
+	margin-top: -40px;
+	transform: rotate(11deg);
+	z-index: +2;
+	-webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+	filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+}
+
+.mediaplayer:hover {
+	-webkit-transform: rotate(15deg);
+	transform: rotate(15deg);
+}
+
+.button {
+	position: absolute;
+	z-index: +3;
+	bottom: 24%;
+	right: 23%;
+	cursor: pointer;
+}
+
+.button:hover {
+	-webkit-filter: brightness(80%);
+	filter: brightness(80%);
+}
+
+textarea {
+	background-color: #f7b500;
+	border: none;
+	outline: none;
+	resize: none;
+	width: 330px;
+	height: 330px;
+	font-size: 1.5vw;
+	line-height: 130%;
+	overflow: auto;
+	overflow-x: hidden;
+	font-family: "Poppins", sans-serif;
+	padding: 10px;
+	/*This makes sure the post-it note doesnt change in size due to padding*/
+	box-sizing: border-box;
+	position: absolute;
+	left: 13%;
+	top: 15%;
+	transform: rotate(-4deg);
+	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+	z-index: +2;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
+textarea::-webkit-input-placeholder {
+	color: black !important;
+}
+
+textarea:-moz-placeholder {
+	/* Firefox 18- */
+	color: black !important;
+}
+
+textarea::-moz-placeholder {
+	/* Firefox 19+ */
+	color: black !important;
+}
+
+textarea:-ms-input-placeholder {
+	color: black !important;
+}
+
+textarea:hover {
+	-webkit-transform: rotate(1deg);
+	transform: rotate(1deg);
+}
+
+/*div.postit{
+	transform:rotate(3deg);
+}*/
+
+img.img {
+	width: 450px;
+	height: auto;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+div.picture {
+	position: absolute;
+	left: 33%;
+	top: 11%;
+	z-index: +1;
+}
+
+div.text {
+	font-family: "Akzidenz-Grotesk", sans-serif;
+	font-size: 9vw;
+	z-index: +4;
+	line-height: 95%;
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+	color: white;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+div.bottombar {
+	width: 100%;
+	height: 5%;
+	background-color: #000ff0;
+	position: absolute;
+	bottom: 0%;
+	z-index: 3;
+}
+
+div.rightwindow {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	overflow: hidden;
+	right: 6%;
+	top: 15%;
+	z-index: +2;
+	cursor: pointer;
+}
+
+div.leftwindow {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	overflow: hidden;
+	right: 6%;
+	top: 55%;
+	z-index: +5;
+}
+
+.ladyinpink {
+	background-image: url("../assets/img3sq.jpg");
+	background-repeat: repeat;
+	background-size: 100%;
+	height: 5000px;
+	animation: upnup 30s linear infinite;
+	animation-direction: reverse;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.ladyinpink:hover {
+	animation-play-state: paused;
+}
+
+.orangina {
+	background-image: url("../assets/img2sq.jpg");
+	background-repeat: repeat;
+	background-size: 100%;
+	height: 5000px;
+	animation: upnup 30s linear infinite;
+}
+
+.orangina:hover {
+	animation-play-state: paused;
+}
+
+@keyframes upnup {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(0, -500px, 0);
+	}
+}
+
+canvas {
+	width: 70%;
+	height: 100%;
+	background-color: transparent;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.media {
+	display: none;
+	position: absolute;
+	top: 0;
+}
+
+@media (max-width: 900px) {
+	div.text {
+		font-size: 90px;
+		font-weight: bold;
+		max-width: 300px;
+	}
+	textarea {
+		width: 200px;
+		height: 200px;
+	}
+	img.img {
+		width: 350px;
+	}
+	div.leftwindow {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 10%;
+	}
+	div.rightwindow {
+		width: 150px;
+		height: 150px;
+	}
+	div.picture {
+		position: absolute;
+		left: 23%;
+		top: 16%;
+	}
+	div.sometext {
+		font-size: 20pt;
+	}
+}
+
+@media (max-width: 500px) {
+	body {
+		background-color: red;
+	}
+	div.bodyodyody {
+		display: none;
+	}
+	.media {
+		display: inline;
+		width: 300px;
+		font-size: 30pt;
+		font-family: "poppins", sans-serif;
+		color: black;
+		text-align: center;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		top: 30%;
+	}
+}

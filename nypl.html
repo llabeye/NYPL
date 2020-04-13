@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New York Public Library</title>
+    <meta name="description" content="NYPL" />
+    <meta name="author" content="Alex" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="favicon.png"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bodyodyody">
+      <div class="sidescreen">
+        <div class="sometext">
+          <a href="https://llabeye.github.io/core-lab2/">site by Alex Mi</a>
+        </div>
+        <div class="doodle">
+          <img class="doodle" src="assets/ledoodle.png" />
+        </div>
+      </div>
+      <div class="frontscreen">
+        <div class="mediaplayer draggable2">
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 358.6 119.8"
+            width="300"
+            height="100"
+            style="enable-background: new 0 0 358.6 119.8;"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: #00b1ff;
+              }
+              .st1 {
+                fill: none;
+                stroke: #000000;
+                stroke-width: 2;
+                stroke-miterlimit: 10;
+              }
+            </style>
+            <path
+              d="M299.4,119.8H58.7C26.1,119.8-0.4,93-0.4,59.9S26.1,0,58.7,0h240.7c32.7,0,59.1,26.8,59.1,59.9
+        C358.6,93,332.1,119.8,299.4,119.8"
+            />
+            <rect x="59.6" y="28.2" class="st0" width="188" height="63.4" />
+            <rect x="70.6" y="66.5" class="st1" width="150" height="8.9" />
+            <rect x="70.6" y="66.5" width="61" height="8.9" />
+          </svg>
+          <div class="button play">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 57 57"
+              width="47.5"
+              height="47.5"
+              style="enable-background: new 0 0 57 57;"
+              xml:space="preserve"
+            >
+              <style type="text/css">
+                .st3 {
+                  fill: #a3a3a3;
+                }
+                .st4 {
+                  fill: #0f627f;
+                }
+              </style>
+              <g>
+                <path
+                  class="st3"
+                  d="M56.6,28.4c0,15.6-12.5,28.2-28,28.2S0.6,44,0.6,28.4s12.5-28.2,28-28.2C44,0.2,56.6,12.8,56.6,28.4"
+                />
+                <path
+                  class="st4"
+                  d="M17.6,17.8v22.4l16.8-10.8v11.1h4.2V16.3h-4.3v10C30,24.2,21.8,20.2,17.6,17.8"
+                />
+              </g>
+            </svg>
+          </div>
+          <audio id="music">
+            <source src="assets/chinesenewyear.mp3" type="audio/mp3" />
+          </audio>
+        </div>
+        <div class="postit draggable">
+          <textarea
+            placeholder="The Wafels and dinges stand in Bryant Park is the perfect spot to grab a cup of coffee or a piece of waffle. Their waffles are totally overpriced-$9.80 for a plain, extra $2 if you add vanilla ice cream on top, but it’s totally worth it. Win the attention of all the 5-12 year olds in the ice rink when you walk by with two scoops of ice cream perfection, with extra surprise of additional visit by pigeons. 10/10 would recommend."
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="picture draggable" id="change">
+          <img class="img" src="./assets/img1.jpeg" />
+        </div>
+        <div id="paint"><canvas id="canvas"></canvas></div>
+        <div class="text">New York Public <br />Library</div>
+        <div class="bottombar"></div>
+        <div class="rightwindow">
+          <div class="orangina"></div>
+        </div>
+        <div class="leftwindow">
+          <div class="ladyinpink"><div class="test">Hey</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      This is a library, get off your phone.<br /><br />Have some damn respect.
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="./js/nypl.js"></script>
+  </body>
+</html>
