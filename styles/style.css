@@ -204,6 +204,7 @@ div.bottombar {
 	position: absolute;
 	bottom: 0%;
 	z-index: 3;
+	cursor:pointer;
 }
 
 div.rightwindow {
