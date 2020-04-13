@@ -16,6 +16,9 @@ $(document).ready(function () {
   $("div.bottombar").click(function () {
     $("img.img").attr("src", "./assets/img1.jpeg");
   });
+  $("div.text").click(function(){
+    $(".text").toggleClass("black");
+  });
   //mediaplayer
   $(".play").click(function () {
     var $this = $(this);

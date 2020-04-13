@@ -196,6 +196,9 @@ div.text {
 	-ms-user-select: none;
 	user-select: none;
 }
+div.text.black{
+	color:black;
+}
 
 div.bottombar {
 	width: 100%;
